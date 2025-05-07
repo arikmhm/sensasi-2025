@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  /* colors */
+  --color-base: #ffffff; /* Putih – warna dasar (misal background) */
+  --color-primary: #177d89; /* Biru tua – warna utama (misal teks) */
+  --color-secondary: #084c61; /* Biru muda – warna sekunder (misal border) */
+  --color-accent: #db3934; /* Merah – warna aksen (misal tombol) */
+  --color-accent-2: #ffc257; /* Kuning – warna aksen kedua (misal hover) */
+}
