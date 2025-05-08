@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar"; // nanti kamu buat
 import LoadingScreen from "./components/LoadingScreen"; // opsional
 import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
+import Registrasi from "./pages/Registrasi";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/tentang" element={<About />} />
         <Route path="/panduan-penulis" element={<AuthorGuide />} />
+        <Route path="/registrasi" element={<Registrasi />} />
       </Routes>
       <Footer />
     </Router>

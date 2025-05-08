@@ -1,5 +1,5 @@
-import PatternLeft from "../../assets/images/pattern-left.svg";
-import PatternRight from "../../assets/images/pattern-right.svg";
+import PatternLeft from "../../assets/images/pattern/pattern-home-about-left.svg";
+import PatternRight from "../../assets/images/pattern/pattern-home-about-right.svg";
 
 const About = () => {
   return (

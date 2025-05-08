@@ -1,5 +1,5 @@
-import patternBottomLeft from "../../assets/images/pattern-left.svg";
-import innerPattern from "../../assets/images/pattern-inner-top-left.svg";
+import patternBottomLeft from "../../assets/images/pattern/pattern-home-about-left.svg";
+import innerPattern from "../../assets/images/pattern/pattern-inner-top-left.svg";
 import programImg1 from "../../assets/images/program/program-1.png";
 import programImg2 from "../../assets/images/program/program-2.png";
 

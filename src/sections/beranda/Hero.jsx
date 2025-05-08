@@ -17,7 +17,7 @@ const Hero = () => {
           <img
             src={ArrowImage}
             alt="Arrow"
-            className="absolute -top-10 left-0 w-24 md:w-32"
+            className="hidden md:block absolute md:-bottom-64 md:left-64 w-24 md:w-2/3"
           />
 
           <h1 className="text-4xl md:text-8xl font-heading font-bold leading-tight">

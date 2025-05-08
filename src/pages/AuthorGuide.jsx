@@ -1,7 +1,11 @@
+import JournalTemplateSection from "../sections/panduanPenulis/JournalTemplateSection";
+import TimelineSection from "../sections/panduanPenulis/TimelineSection";
+
 const AuthorGuide = () => {
   return (
     <main className="min-h-screen">
-      <h1 className="text-3xl font-heading text-primary">Panduan Penulis</h1>
+      <TimelineSection />
+      <JournalTemplateSection />
     </main>
   );
 };

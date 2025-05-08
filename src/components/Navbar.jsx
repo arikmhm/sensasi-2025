@@ -1,12 +1,34 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { ChevronDown } from "lucide-react"; // pastikan kamu sudah install lucide-react
 
 const Navbar = () => {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const isActive = (path) => location.pathname === path;
+
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        event.target.id !== "acara-button"
+      ) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="bg-base shadow-sm fixed w-full z-50">
@@ -17,22 +39,22 @@ const Navbar = () => {
 
         {/* Hamburger for mobile */}
         <button
-          className="md:hidden flex flex-col justify-center items-center"
+          className="md:hidden flex flex-col justify-center items-center "
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
           <span
-            className={`h-0.5 w-6 bg-Charcoal mb-1.5 transition-all ${
+            className={`h-0.5 w-6 bg-primary mb-1.5 transition-all ${
               isOpen ? "rotate-45 translate-y-2" : ""
             }`}
           ></span>
           <span
-            className={`h-0.5 w-6 bg-Charcoal mb-1.5 transition-all ${
+            className={`h-0.5 w-6 bg-primary mb-1.5 transition-all ${
               isOpen ? "opacity-0" : ""
             }`}
           ></span>
           <span
-            className={`h-0.5 w-6 bg-Charcoal transition-all ${
+            className={`h-0.5 w-6 bg-primary transition-all ${
               isOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           ></span>
@@ -40,47 +62,105 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:block">
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-6 items-center relative">
             <li>
-              <Link to="/" className="text-secondary hover:font-semibold">
+              <Link
+                to="/"
+                className={`hover:text-primary transition ${
+                  isActive("/")
+                    ? "text-primary font-semibold"
+                    : "text-secondary"
+                }`}
+              >
                 Beranda
               </Link>
             </li>
             <li>
               <Link
                 to="/tentang"
-                className="text-secondary hover:font-semibold"
+                className={`hover:text-primary transition ${
+                  isActive("/tentang")
+                    ? "text-primary font-semibold"
+                    : "text-secondary"
+                }`}
               >
                 Tentang
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/panduan-penulis"
+                className={`hover:text-primary transition ${
+                  isActive("/panduan-penulis")
+                    ? "text-primary font-semibold"
+                    : "text-secondary"
+                }`}
+              >
+                Panduan Penulis
+              </Link>
+            </li>
+
+            {/* Dropdown Acara */}
+            <li className="relative">
+              <button
+                id="acara-button"
+                className="flex items-center gap-1 text-secondary hover:text-primary transition"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              >
+                Acara
+                <ChevronDown size={16} />
+              </button>
+
+              {isDropdownOpen && (
+                <ul
+                  ref={dropdownRef}
+                  className={`absolute bg-white overflow-hidden transition-all duration-300 ease-in-out origin-top ${
+                    isDropdownOpen
+                      ? "max-h-96 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <li>
+                    <Link
+                      to="/acara/tempat"
+                      className="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700"
+                      onClick={() => setIsDropdownOpen(false)}
+                    >
+                      Tempat
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/acara/speaker"
+                      className="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700"
+                      onClick={() => setIsDropdownOpen(false)}
+                    >
+                      Speaker
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
+
+            <li>
+              <Link
+                to="/prosiding"
+                className={`hover:text-primary transition ${
+                  isActive("/prosiding")
+                    ? "text-primary font-semibold"
+                    : "text-secondary"
+                }`}
+              >
+                Prosiding
               </Link>
             </li>
 
             <li>
               <Link
-                to="/panduan-penulis"
-                className="text-secondary hover:font-semibold"
+                to="/registrasi"
+                className="hover:bg-secondary transition bg-primary text-white rounded-lg px-6 py-2"
               >
-                Panduan Penulis
-              </Link>
-            </li>
-            <li>
-              <Link to="/" className="text-secondary hover:font-semibold">
-                Acara
-              </Link>
-            </li>
-            <li>
-              <Link to="/" className="text-secondary hover:font-semibold">
                 Registrasi
-              </Link>
-            </li>
-            <li>
-              <Link to="/" className="text-secondary hover:font-semibold">
-                Prosiding
-              </Link>
-            </li>
-            <li>
-              <Link to="/" className="text-secondary hover:font-semibold">
-                Kontak
               </Link>
             </li>
           </ul>
@@ -89,12 +169,12 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden w-full bg-Champagne border-t border-gray-200">
+        <div className="md:hidden w-full bg-base border-t border-base flex flex-col items-end text-end font-medium text-lg">
           <ul className="py-2 px-4">
             <li className="py-2">
               <Link
                 to="/"
-                className="block text-secondary hover:font-semibold"
+                className="block text-black/80 hover:font-semibold"
                 onClick={toggleMenu}
               >
                 Beranda
@@ -103,7 +183,7 @@ const Navbar = () => {
             <li className="py-2">
               <Link
                 to="/tentang"
-                className="block text-secondary hover:font-semibold"
+                className="block text-black/80 hover:font-semibold"
                 onClick={toggleMenu}
               >
                 Tentang
@@ -112,28 +192,68 @@ const Navbar = () => {
             <li className="py-2">
               <Link
                 to="/panduan-penulis"
-                className="block text-secondary hover:font-semibold"
+                className="block text-black/80 hover:font-semibold"
                 onClick={toggleMenu}
               >
                 Panduan Penulis
               </Link>
             </li>
+            <li className=" py-2 inline-block">
+              <button
+                id="acara-button"
+                className="flex items-center  gap-1 text-secondary hover:text-primary transition"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              >
+                Acara
+                <ChevronDown size={16} />
+              </button>
+
+              {isDropdownOpen && (
+                <ul
+                  ref={dropdownRef}
+                  className={` bg-white overflow-hidden transition-all duration-300 ease-in-out origin-top ${
+                    isDropdownOpen
+                      ? "max-h-96 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <li>
+                    <Link
+                      to="/acara/tempat"
+                      className="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700"
+                      onClick={() => setIsDropdownOpen(false)}
+                    >
+                      Tempat
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/acara/speaker"
+                      className="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700"
+                      onClick={() => setIsDropdownOpen(false)}
+                    >
+                      Speaker
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
             <li className="py-2">
               <Link
                 to="/"
-                className="block text-secondary hover:font-semibold"
+                className="block text-black/80 hover:font-semibold"
                 onClick={toggleMenu}
               >
-                FAQ
+                Prosiding
               </Link>
             </li>
             <li className="py-2">
               <Link
                 to="/"
-                className="block text-secondary hover:font-semibold"
+                className="inline-block text-base hover:font-semibold bg-primary rounded-lg px-6 py-1 "
                 onClick={toggleMenu}
               >
-                Kontak
+                Registrasi
               </Link>
             </li>
           </ul>

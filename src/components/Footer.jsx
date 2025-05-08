@@ -1,5 +1,5 @@
-import patternLeftFooter from "../assets/images/pattern-footer-left.svg";
-import patternRightFooter from "../assets/images/pattern-footer-right.svg";
+import patternLeftFooter from "../assets/images/pattern/pattern-footer-left.svg";
+import patternRightFooter from "../assets/images/pattern/pattern-footer-right.svg";
 import logoFooter from "../assets/images/logo.svg";
 
 const Footer = () => {
