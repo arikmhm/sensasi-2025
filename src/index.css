@@ -8,3 +8,17 @@
   --color-accent: #db3934; /* Merah – warna aksen (misal tombol) */
   --color-accent-2: #ffc257; /* Kuning – warna aksen kedua (misal hover) */
 }
+
+@layer utilities {
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-scroll-horizontal {
+    animation: scroll-horizontal 20s linear infinite;
+  }
+}

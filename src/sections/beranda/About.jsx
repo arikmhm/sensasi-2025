@@ -5,11 +5,11 @@ const About = () => {
   return (
     <section className="relative bg-secondary py-20 px-6">
       {/* Konten utama */}
-      <div className="max-w-5xl mx-auto text-center relative z-10">
+      <div className="max-w-6xl mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-base">
           Seminar Nasional Sistem Informasi Dan Call For Paper (SENSASI 2025)
         </h2>
-        <p className="mt-4 text-lg text-base">
+        <p className="mt-4 text-lg text-base text-justify leading-relaxed">
           Seminar Nasional Sistem Informasi Dan Call For Paper (SENSASI 2025)
           merupakan forum ilmiah yang diselenggarakan oleh Himpunan Mahasiswa
           Program Studi Sistem Informasi Universitas Dian Nuswantoro. Kegiatan

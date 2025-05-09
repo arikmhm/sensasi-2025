@@ -30,15 +30,38 @@ const Navbar = () => {
     };
   }, []);
 
+  const menuRef = useRef(null); // untuk dropdown mobile
+  const buttonRef = useRef(null); // untuk tombol hamburger
+  // Tutup menu jika klik di luar
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        isOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(e.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
   return (
     <header className="bg-base shadow-sm fixed w-full z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-semibold text-Charcoal font-pf">
-          Sensasi 2025
+          INFO LOGO SENSASI 2025!
         </Link>
 
         {/* Hamburger for mobile */}
         <button
+          ref={buttonRef}
           className="md:hidden flex flex-col justify-center items-center "
           onClick={toggleMenu}
           aria-label="Toggle menu"
@@ -138,6 +161,15 @@ const Navbar = () => {
                       Speaker
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      to="/acara/rundown"
+                      className="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700"
+                      onClick={() => setIsDropdownOpen(false)}
+                    >
+                      Rundown
+                    </Link>
+                  </li>
                 </ul>
               )}
             </li>
@@ -169,7 +201,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden w-full bg-base border-t border-base flex flex-col items-end text-end font-medium text-lg">
+        <div
+          ref={menuRef}
+          className="md:hidden w-full bg-base border-t border-base flex flex-col items-end text-end font-medium text-lg"
+        >
           <ul className="py-2 px-4">
             <li className="py-2">
               <Link
@@ -235,6 +270,15 @@ const Navbar = () => {
                       Speaker
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      to="/acara/rundown"
+                      className="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700"
+                      onClick={() => setIsDropdownOpen(false)}
+                    >
+                      Rundown
+                    </Link>
+                  </li>
                 </ul>
               )}
             </li>
@@ -249,7 +293,7 @@ const Navbar = () => {
             </li>
             <li className="py-2">
               <Link
-                to="/"
+                to="/registrasi"
                 className="inline-block text-base hover:font-semibold bg-primary rounded-lg px-6 py-1 "
                 onClick={toggleMenu}
               >

@@ -17,7 +17,7 @@ const JournalTemplateSection = () => {
         </div>
 
         {/* Deskripsi */}
-        <p className="text-white text-justify leading-relaxed text-base md:text-lg">
+        <p className=" text-justify leading-relaxed text-base md:text-lg">
           Naskah yang dikirimkan harus merupakan karya asli dan belum pernah
           dipublikasikan ataupun sedang dalam proses peninjauan di forum atau
           penerbit lain selama masih dalam tahap evaluasi oleh SENSASI 2025.

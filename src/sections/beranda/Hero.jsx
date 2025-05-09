@@ -1,6 +1,7 @@
 import BgHero from "../../assets/images/bg-hero.svg";
 import HeroImage from "../../assets/images/hero-image.svg";
 import ArrowImage from "../../assets/images/arrow.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -27,11 +28,11 @@ const Hero = () => {
           <p className="mt-4 mb-8 text-lg font-medium md:text-4xl text-secondary">
             Seminar Nasional Sistem Informasi Dan Call For Paper
           </p>
-          <a href="#" className="cta">
+          <Link to="/registrasi">
             <button className="mt-4 text-xl md:text-2xl bg-accent text-white py-4 px-8 rounded-xl hover:bg-primary-dark transition duration-300">
               Daftar Sekarang
             </button>
-          </a>
+          </Link>
         </div>
 
         {/* Gambar kanan */}
