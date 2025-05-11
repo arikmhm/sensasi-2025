@@ -9,7 +9,7 @@ const SpeakerCard = ({ image, name, position }) => {
         <img
           src={image}
           alt={name}
-          className="relative z-10 w-full h-full max-w-52 max-h-64 md:max-w-80 md:max-h-92 object-cover "
+          className="relative z-10 w-full h-full max-w-52 max-h-64 md:max-w-80 md:max-h-92 object-contain "
         />
       </div>
 

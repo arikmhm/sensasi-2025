@@ -4,28 +4,30 @@ const tickets = [
     description: [
       {
         label: "Mahasiswa",
-        items: [
-          { label: "Presenter individu", price: "Rp250.000" },
-          { label: "Bundling 1", price: "Rp350.000" },
-        ],
+        price: "Rp40.000",
+        benefits: ["Seminar Kit", "Materi Seminar", "Snack", "E-Sertifikat"],
       },
     ],
-    link: "/form-paper",
+    link: "https://bit.ly/PendaftaranSENSASI2025",
+  },
+  {
+    title: "Seminar",
+    description: [
+      {
+        label: "Umum",
+        price: "Rp50.000",
+        benefits: ["Seminar Kit", "Materi Seminar", "Snack", "E-Sertifikat"],
+      },
+    ],
+    link: "https://bit.ly/PendaftaranSENSASI2025",
   },
   {
     title: "Seminar & Paper",
     description: [
       {
         label: "Mahasiswa",
-        items: [
-          { label: "Seminar paper mhs 1 orang", price: "Rp100.000" },
-          { label: "Bundling 1 : 2-3 orang satu paper", price: "Rp160.000" },
-          { label: "Bundling 2 : 4-6 orang satu paper", price: "Rp250.000" },
-        ],
-      },
-      {
-        label: "Umum",
-        items: [{ label: "Individu", price: "Rp150.000" }],
+        price: "Rp100.000",
+        benefits: ["Publikasi Paper", "Seminar", "Seminar Kit", "E-Sertifikat"],
       },
     ],
     link: "/form-seminar",

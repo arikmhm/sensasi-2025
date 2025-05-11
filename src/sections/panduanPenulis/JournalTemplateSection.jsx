@@ -8,8 +8,8 @@ const JournalTemplateSection = () => {
             Format / Template Jurnal
           </h2>
           <a
-            href="/template-jurnal.docx"
-            download
+            href="https://drive.google.com/drive/folders/1Sdmvt8olvStCPGZ7nQ0Qzh-NDUmOt5eP"
+            target="_blank"
             className="bg-accent-2 text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition duration-300 text-sm md:text-base"
           >
             Download Template

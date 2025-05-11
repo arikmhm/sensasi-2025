@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react"; // pastikan kamu sudah install lucide-react
+import Logo from "../assets/images/logo.svg";
 
 const Navbar = () => {
   const location = useLocation();
@@ -56,7 +57,7 @@ const Navbar = () => {
     <header className="bg-base shadow-sm fixed w-full z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-semibold text-Charcoal font-pf">
-          INFO LOGO SENSASI 2025!
+          <img src={Logo} alt="SENSASI 2025" className="max-h-12" />
         </Link>
 
         {/* Hamburger for mobile */}
@@ -174,7 +175,7 @@ const Navbar = () => {
               )}
             </li>
 
-            <li>
+            {/* <li>
               <Link
                 to="/prosiding"
                 className={`hover:text-primary transition ${
@@ -185,7 +186,7 @@ const Navbar = () => {
               >
                 Prosiding
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link
@@ -282,7 +283,7 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-            <li className="py-2">
+            {/* <li className="py-2">
               <Link
                 to="/"
                 className="block text-black/80 hover:font-semibold"
@@ -290,7 +291,7 @@ const Navbar = () => {
               >
                 Prosiding
               </Link>
-            </li>
+            </li> */}
             <li className="py-2">
               <Link
                 to="/registrasi"

@@ -1,19 +1,55 @@
 const categories = [
   {
-    title: "Sistem Informasi",
+    title: "Ilmu Komputer",
     items: [
-      "Manajemen Sistem Informasi",
-      "Rekayasa Perangkat Lunak",
-      "Pengembangan Aplikasi Bisnis",
+      "Transformasi Digital",
+      "AI dan Machine Learning",
+      "Big Data",
+      "Cloud Computing",
+      "Blockchain",
+      "Cybersecurity",
+      "Sistem Pendukung Keputusan",
+      "IoT (Internet of Things)",
+      "Animasi, Film, dan Televisi",
+      "Desain Komunikasi Visual",
     ],
   },
   {
-    title: "Teknologi Informasi",
-    items: ["Keamanan Siber", "Cloud Computing", "Internet of Things (IoT)"],
+    title: "Ilmu Komunikasi",
+    items: [],
   },
   {
-    title: "Data dan Kecerdasan Buatan",
-    items: ["Data Mining", "Machine Learning", "Big Data Analytics"],
+    title: "Teknik",
+    items: [
+      "Digitalisasi Manufaktur",
+      "Sustainability dan Green Technology",
+      "Teknologi Material Cerdas",
+    ],
+  },
+  {
+    title: "Pendidikan",
+    items: [],
+  },
+  {
+    title: "Kesehatan",
+    items: [],
+  },
+  {
+    title: "Sosial dan Budaya",
+    items: [],
+  },
+  {
+    title: "Ekonomi dan Bisnis",
+    items: [
+      "Supply Chain Management",
+      "Implementasi AI dalam Bisnis",
+      "Digital Marketing",
+      "E-Commerce",
+    ],
+  },
+  {
+    title: "Hukum",
+    items: [],
   },
 ];
 

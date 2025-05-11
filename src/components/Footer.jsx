@@ -28,8 +28,11 @@ const Footer = () => {
           <div className="text-sm md:text-primary space-y-2 text-primary text-left">
             <p>
               Email:{" "}
-              <a href="mailto:sensasi@univ.ac.id" className="underline">
-                sensasi@univ.ac.id
+              <a
+                href="mailto:sensasiudinus2025@gmail.com"
+                className="underline"
+              >
+                sensasiudinus2025@gmail.com
               </a>
             </p>
             <p>Telepon: 0812-3456-7890</p>

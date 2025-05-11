@@ -35,7 +35,7 @@ const App = () => {
         <Route path="/acara/speaker" element={<SpeakerPage />} />
         <Route path="/acara/tempat" element={<LocationPage />} />
         <Route path="/acara/rundown" element={<RundownPage />} />
-        <Route path="/prosiding" element={<ProsidingPage />} />
+        {/* <Route path="/prosiding" element={<ProsidingPage />} /> */}
       </Routes>
       <Footer />
     </Router>

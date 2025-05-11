@@ -1,6 +1,5 @@
 import BgHero from "../../assets/images/bg-hero.svg";
-import HeroImage from "../../assets/images/hero-image.svg";
-import ArrowImage from "../../assets/images/arrow.svg";
+import HeroImage from "../../assets/images/img-hero.png";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -15,11 +14,6 @@ const Hero = () => {
         {/* Teks kiri */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start relative px-8 md:px-48 pb-12 md:py-0">
           {/* Arrow */}
-          <img
-            src={ArrowImage}
-            alt="Arrow"
-            className="hidden md:block absolute md:-bottom-64 md:left-64 w-24 md:w-2/3"
-          />
 
           <h1 className="text-4xl md:text-8xl font-heading font-bold leading-tight">
             <span className="text-accent">SENSASI</span>{" "}

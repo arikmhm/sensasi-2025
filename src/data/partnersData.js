@@ -1,5 +1,7 @@
 import sponsor from "../assets/images/partners/sponsor.svg";
 import medpart from "../assets/images/partners/medpart.svg";
+import Doscom from "../assets/images/partners/medpart/doscom.png";
+import BiroAnimasi from "../assets/images/partners/medpart/biro-animasi.png";
 export const sponsors = [
   { name: "Sponsor A", logo: sponsor },
   { name: "Sponsor B", logo: sponsor },
@@ -8,8 +10,8 @@ export const sponsors = [
 ];
 
 export const mediaPartners = [
-  { name: "Media 1", logo: medpart },
-  { name: "Media 2", logo: medpart },
-  { name: "Media 3", logo: medpart },
-  { name: "Media 4", logo: medpart },
+  { name: "Doscom", logo: Doscom },
+  { name: "Biro Animasi", logo: BiroAnimasi },
+  { name: "Medpart", logo: medpart },
+  { name: "Medpart", logo: medpart },
 ];

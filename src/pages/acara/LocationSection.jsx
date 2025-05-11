@@ -21,10 +21,10 @@ const LocationPage = () => {
             <img
               src={locationImg}
               alt="Lokasi Acara"
-              className="shadow-lg w-full object-cover"
+              className=" w-full h-[300px] md:min-h-[490px] object-cover"
             />
             <p className="text-justify text-sm md:text-base text-base leading-relaxed">
-              Acara ini akan dilaksanakan di <strong>Aula Gedung E3 </strong>,
+              Acara ini akan dilaksanakan di <strong>Auditorium H.7 </strong>,
               Universitas Dian Nuswantoro, Semarang. Lokasi ini mudah diakses
               dan dilengkapi dengan fasilitas lengkap untuk mendukung kenyamanan
               peserta.

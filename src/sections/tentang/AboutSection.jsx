@@ -22,7 +22,7 @@ const AboutSection = () => {
         <h2 className="text-4xl md:text-8xl font-heading font-semibold text-accent leading-tight">
           Call for Paper
         </h2>
-        <p className="mt-6 text-base md:text-2xl text-secondary">
+        <p className="mt-6  md:text-2xl text-secondary">
           Makalah yang dikirimkan diharapkan selaras dengan tema utama
           konferensi dan mencerminkan perkembangan terbaru dalam teori,
           pendekatan metodologis, maupun implementasi praktis. Topik-topik yang
@@ -31,9 +31,9 @@ const AboutSection = () => {
         </p>
 
         <a
-          href="/dokumen/panduan-call-for-paper.pdf"
-          download
+          href="https://drive.google.com/drive/folders/1Sdmvt8olvStCPGZ7nQ0Qzh-NDUmOt5eP"
           className="inline-block mt-8 bg-accent text-white text-lg font-semibold py-3 px-6 rounded-xl hover:bg-primary-dark transition duration-300"
+          target="_blank"
         >
           Download Panduan
         </a>
