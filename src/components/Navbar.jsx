@@ -193,7 +193,7 @@ const Navbar = () => {
                 to="/registrasi"
                 className="hover:bg-secondary transition bg-primary text-white rounded-lg px-6 py-2"
               >
-                Registrasi
+                Daftar
               </Link>
             </li>
           </ul>
@@ -298,7 +298,7 @@ const Navbar = () => {
                 className="inline-block text-base hover:font-semibold bg-primary rounded-lg px-6 py-1 "
                 onClick={toggleMenu}
               >
-                Registrasi
+                Daftar
               </Link>
             </li>
           </ul>

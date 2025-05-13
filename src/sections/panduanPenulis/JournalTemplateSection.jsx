@@ -8,7 +8,7 @@ const JournalTemplateSection = () => {
             Format / Template Jurnal
           </h2>
           <a
-            href="https://drive.google.com/drive/folders/1Sdmvt8olvStCPGZ7nQ0Qzh-NDUmOt5eP"
+            href="https://drive.google.com/drive/folders/1z9wwZEjwTIsL4ds-TSl_CmyZ4F3sNCRr?usp=sharing"
             target="_blank"
             className="bg-accent-2 text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition duration-300 text-sm md:text-base"
           >
