@@ -25,10 +25,14 @@ jobs:
         run: npm run build
 
       - name: Deploy to deploy Branch
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git config --global user.name "arikmhm"
-          git config --global user.email "mhm.ariyanto@gmail.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}
           git checkout --orphan deploy
           git --work-tree dist add --all
           git --work-tree dist commit -m "Deploy from GitHub Actions"
           git push origin HEAD:deploy --force
+
