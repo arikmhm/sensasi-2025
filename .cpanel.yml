@@ -1,10 +1,11 @@
 ---
 deployment:
   branch: deploy
-  commands:
+  tasks:
+    - export DEPLOYPATH=~/public_html/sensasi2025.hmsisfoudinus.org
     - echo "🚀 Deploying from deploy branch..."
     - echo "🧹 Membersihkan direktori tujuan..."
-    - rm -rf ~/home/hmsq3161/public_html/sensasi2025.hmsisfoudinus.org/*
+    - /bin/rm -rf $DEPLOYPATH/*
     - echo "📁 Menyalin file dari repository ke public_html..."
-    - cp -R ~/home/hmsq3161/repositories/sensasi-2025/* ~/home/hmsq3161/public_html/sensasi2025.hmsisfoudinus.org/
+    - /bin/cp -R * $DEPLOYPATH/
     - echo "✅ Deploy berhasil ke sensasi2025.hmsisfoudinus.org"
