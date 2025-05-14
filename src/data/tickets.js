@@ -1,32 +1,32 @@
 const tickets = [
   {
-    title: "Seminar",
+    title: "SEMINAR",
     description: [
       {
-        label: "Mahasiswa",
-        price: "Rp40.000",
+        label: "MAHASISWA",
+        price: "40K",
         benefits: ["Seminar Kit", "Materi Seminar", "Snack", "E-Sertifikat"],
       },
     ],
     link: "https://bit.ly/PendaftaranSENSASI2025",
   },
   {
-    title: "Seminar",
+    title: "SEMINAR",
     description: [
       {
-        label: "Umum",
-        price: "Rp50.000",
+        label: "UMUM",
+        price: "50K",
         benefits: ["Seminar Kit", "Materi Seminar", "Snack", "E-Sertifikat"],
       },
     ],
     link: "https://bit.ly/PendaftaranSENSASI2025",
   },
   {
-    title: "Seminar & Paper",
+    title: "SEMINAR & PAPER",
     description: [
       {
-        label: "Mahasiswa",
-        price: "Rp100.000",
+        label: "MAHASISWA",
+        price: "100K",
         benefits: ["Publikasi Paper", "Seminar", "Seminar Kit", "E-Sertifikat"],
       },
     ],

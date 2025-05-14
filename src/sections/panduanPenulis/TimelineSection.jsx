@@ -4,23 +4,23 @@ import patternRight from "../../assets/images/pattern/pattern-about-about-right.
 
 const TimelineSection = () => {
   return (
-    <section className="relative bg-base py-20 px-6 min-h-screen">
+    <section className="relative bg-base py-20 px-6">
       {/* Pattern pojok kanan bawah */}
-      <img
+      {/* <img
         src={patternLeft}
         alt=""
         className="absolute top-16 left-0 w-24 md:w-80"
-      />
+      /> */}
       {/* Pattern kanan bawah */}
-      <img
+      {/* <img
         src={patternRight}
         alt=""
         className="absolute md:top-16 bottom-0 right-0 md:right-0 w-24 md:w-80 transform md:rotate-0 rotate-90"
-      />
+      /> */}
 
       {/* Judul */}
       <div className="max-w-6xl mx-auto mb-12 md:mt-64 mt-24">
-        <h2 className="text-accent-2 text-4xl md:text-6xl font-medium mb-4 md:text-center text-left ">
+        <h2 className="text-accent text-2xl md:text-4xl font-medium mb-4 md:text-center text-left ">
           Tanggal Penting
         </h2>
       </div>

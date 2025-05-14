@@ -5,9 +5,8 @@ import TimelineSection from "../sections/panduanPenulis/TimelineSection";
 const AuthorGuide = () => {
   return (
     <main className="min-h-screen">
-      <TimelineSection />
-      <JournalTemplateSection />
       <RegistrationFlowSection />
+      <JournalTemplateSection />
     </main>
   );
 };

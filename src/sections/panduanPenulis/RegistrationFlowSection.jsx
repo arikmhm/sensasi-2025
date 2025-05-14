@@ -5,7 +5,7 @@ const RegistrationFlowSection = () => {
     <section className="relative bg-base py-20 px-6 min-h-screen">
       {/* Judul */}
       <div className="max-w-6xl mx-auto mb-12 mt-24 md:mt-40">
-        <h2 className="text-accent-2 text-4xl md:text-6xl font-medium mb-4 md:text-center text-left">
+        <h2 className="text-accent text-3xl md:text-5xl font-medium mb-4 md:text-center text-left">
           Alur Pendaftaran Call for Paper SENSASI 2025
         </h2>
       </div>

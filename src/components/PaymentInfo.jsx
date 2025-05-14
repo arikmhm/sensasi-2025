@@ -14,8 +14,8 @@ const PaymentInfo = () => {
   return (
     <div className="mt-12 max-w-2xl mx-auto bg-[#f8f9fa] md:bg-transparent p-6 rounded-xl shadow-md md:shadow-none border md:border-none border-gray-200">
       <div className="flex items-start gap-3 mb-4">
-        <Info className="w-6 h-6 mt-1 text-primary" />
-        <p className="text-sm text-gray-700 text-justify leading-relaxed">
+        <Info className="w-6 h-6 mt-1 text-base" />
+        <p className="text-sm text-base/80 text-justify leading-relaxed">
           <em>
             Peserta dapat melakukan pembayaran biaya pendaftaran sesuai dengan
             kategori bundling yang dipilih ke rekening berikut:
