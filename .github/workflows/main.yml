@@ -26,8 +26,8 @@ jobs:
 
       - name: Deploy to deploy Branch
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "arikmhm"
+          git config --global user.email "mhm.ariyanto@gmail.com"
           git checkout --orphan deploy
           git --work-tree dist add --all
           git --work-tree dist commit -m "Deploy from GitHub Actions"
