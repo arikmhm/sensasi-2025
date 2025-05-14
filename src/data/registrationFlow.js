@@ -1,10 +1,7 @@
 const registrationFlow = [
   {
     title: "1. Pendaftaran & Pembayaran",
-    items: [
-      "Penulis melakukan pendaftaran dan pembayaran melalui link berikut:",
-      "https://bit.ly/PendaftaranPaperSENSASI2025",
-    ],
+    items: ["Penulis melakukan pendaftaran dan pembayaran "],
   },
   {
     title: "2. Konfirmasi & Formulir Pengumpulan",

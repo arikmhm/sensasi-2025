@@ -120,7 +120,7 @@ const Navbar = () => {
                     : "text-secondary"
                 }`}
               >
-                Panduan Penulis
+                Call For Paper
               </Link>
             </li>
 
@@ -231,7 +231,7 @@ const Navbar = () => {
                 className="block text-black/80 hover:font-semibold"
                 onClick={toggleMenu}
               >
-                Panduan Penulis
+                Call For Paper
               </Link>
             </li>
             <li className=" py-2 inline-block">

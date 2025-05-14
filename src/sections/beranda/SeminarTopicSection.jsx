@@ -24,7 +24,7 @@ const SeminarTopicSection = () => {
               <strong>
                 “Transformasi Digital: Ekosistem dan Daya Saing Industri 4.0”
               </strong>{" "}
-              , , dilaksanakan pada Kamis, 14 Juni 2025 di aula gedung E3
+              , dilaksanakan pada Sabtu, 21 Juni 2025 di Auditorium H7
               Universitas Dian Nuswantoro.
             </p>
             <br />
@@ -35,8 +35,7 @@ const SeminarTopicSection = () => {
               peserta dapat memperoleh wawasan yang lebih luas mengenai peran
               teknologi dalam meningkatkan daya saing industri serta menjalin
               kolaborasi dalam mengembangkan ekosistem digital yang inklusif dan
-              berkelanjutan. Kegiatan ini akan diikuti oleh dari berbagai
-              akademisi, peneliti, mahasiswa dengan target 200 peserta
+              berkelanjutan.
             </p>
           </div>
 
