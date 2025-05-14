@@ -30,6 +30,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Salin file .cpanel.yml ke dalam dist agar ikut terdeploy
+          cp .cpanel.yml dist/
+
           git remote set-url origin "https://x-access-token:$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
           git fetch origin
           git checkout --orphan deploy
