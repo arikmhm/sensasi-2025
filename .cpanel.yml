@@ -4,7 +4,7 @@ deployment:
   commands:
     - echo "🚀 Deploying from deploy branch..."
     - echo "🧹 Membersihkan direktori tujuan..."
-    - rm -rf ~/public_html/sensasi2025.hmsisfoudinus.org/*
+    - rm -rf ~/home/hmsq/public_html/sensasi2025.hmsisfoudinus.org/*
     - echo "📁 Menyalin file dari repository ke public_html..."
     - cp -R ~/repositories/sensasi-2025/* ~/public_html/sensasi2025.hmsisfoudinus.org/
     - echo "✅ Deploy berhasil ke sensasi2025.hmsisfoudinus.org"
