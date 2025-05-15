@@ -1,21 +1,6 @@
-import patternLeft from "../../assets/images/pattern/pattern-about-about-left.svg";
-import patternRight from "../../assets/images/pattern/pattern-about-about-right.svg";
-
 const AboutSection = () => {
   return (
     <section className="relative bg-base py-20 px-6 overflow-hidden ">
-      {/* Pattern kiri bawah */}
-      <img
-        src={patternLeft}
-        alt=""
-        className="absolute top-16 left-0 w-32 md:w-80"
-      />
-      {/* Pattern kanan bawah */}
-      <img
-        src={patternRight}
-        alt=""
-        className="absolute hidden  md:top-16 bottom-0 right-0 md:right-0 w-32 md:w-80 transform md:rotate-0 rotate-90"
-      />
 
       {/* Konten utama */}
       <div className="max-w-6xl mx-auto text-center mt-16 md:mt-48">
