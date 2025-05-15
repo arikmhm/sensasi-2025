@@ -22,7 +22,7 @@ const AboutSection = () => {
         <h2 className="text-2xl md:text-5xl font-heading font-semibold text-accent leading-tight">
           Seminar Nasional Sistem Informasi Dan Call For Paper (SENSASI 2025)
         </h2>
-        <p className="mt-6  md:text-xl text-secondary text-justify">
+        <p className="mt-8  md:text-xl text-secondary text-justify">
           Seminar Nasional Sistem Informasi Dan Call For Paper (SENSASI 2025)
           merupakan forum ilmiah yang diselenggarakan oleh Himpunan Mahasiswa
           Program Studi Sistem Informasi Universitas Dian Nuswantoro. Kegiatan
