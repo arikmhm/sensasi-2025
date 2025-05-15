@@ -1,23 +1,19 @@
-import GuessSpeaker from "../assets/images/speaker/guess-speaker.svg";
+import Pulung from "../assets/images/speaker/pulung.png";
+import Masrokhan from "../assets/images/speaker/masrokhan.png";
 
 const speakerData = [
   {
     id: 1,
-    // name: "Dr. Andi Prasetyo",
-    // position: "Dosen Sistem Informasi, Universitas ABC",
-    image: GuessSpeaker,
+    name: "Prof. Dr. Pulung Nurtantio Andono, S.T., M.Kom",
+    position: "Rektor, Universitas Dian Nuswantoro",
+    image: Pulung,
   },
   {
     id: 2,
-    // name: "Ir. Maya Rahmawati, M.Kom",
-    // position: "Kepala IT, PT Teknologi Nusantara",
-    image: GuessSpeaker,
-  },
-  {
-    id: 3,
-    // name: "Prof. Bambang Hartono",
-    // position: "Peneliti Senior, LIPI",
-    image: GuessSpeaker,
+    name: "Drs. Masrokhan, MPA.,CGCAE",
+    position:
+      "Kepala Badan Pengembangan SDM Industri, Kementerian Perindustrian",
+    image: Masrokhan,
   },
 ];
 

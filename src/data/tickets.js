@@ -5,7 +5,14 @@ const tickets = [
       {
         label: "MAHASISWA",
         price: "40K",
-        benefits: ["Seminar Kit", "Materi Seminar", "Snack", "E-Sertifikat"],
+        benefits: [
+          "Seminar Kit",
+          "Materi Seminar",
+          "Snack",
+          "E-Sertifikat",
+          "Makan Siang",
+          "Snack",
+        ],
       },
     ],
     link: "https://bit.ly/PendaftaranSENSASI2025",
@@ -16,7 +23,14 @@ const tickets = [
       {
         label: "UMUM",
         price: "50K",
-        benefits: ["Seminar Kit", "Materi Seminar", "Snack", "E-Sertifikat"],
+        benefits: [
+          "Seminar Kit",
+          "Materi Seminar",
+          "Snack",
+          "E-Sertifikat",
+          "Makan Siang",
+          "Snack",
+        ],
       },
     ],
     link: "https://bit.ly/PendaftaranSENSASI2025",
@@ -27,7 +41,14 @@ const tickets = [
       {
         label: "MAHASISWA",
         price: "100K",
-        benefits: ["Publikasi Paper", "Seminar", "Seminar Kit", "E-Sertifikat"],
+        benefits: [
+          "Publikasi Paper",
+          "Seminar",
+          "Seminar Kit",
+          "E-Sertifikat",
+          "Makan Siang",
+          "Snack",
+        ],
       },
     ],
     link: "/form-seminar",

@@ -9,7 +9,7 @@ const SpeakerSection = () => {
           PEMBICARA UTAMA
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {speakerData.map((speaker) => (
             <SpeakerCard
               key={speaker.id}

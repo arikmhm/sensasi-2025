@@ -33,8 +33,8 @@ const AboutSection = () => {
           <strong>
             “Transformasi Digital: Ekosistem dan Daya Saing Industri 4.0”
           </strong>{" "}
-          , , dilaksanakan pada Kamis, 14 Juni 2025 di aula gedung E3
-          Universitas Dian Nuswantoro.
+          , dilaksanakan pada Sabtu, 21 Juni 2025 di Auditorium H7 Universitas
+          Dian Nuswantoro.
         </p>{" "}
         <br />
         <p className="mt-6  md:text-xl text-secondary text-justify">

@@ -14,8 +14,8 @@ const SpeakerCard = ({ image, name, position }) => {
       </div>
 
       {/* Info teks */}
-      <h3 className="mt-6 text-xl font-semibold text-base">{name}</h3>
-      <p className="text-sm text-base">{position}</p>
+      <h3 className="mt-2 text-2xl font-semibold text-base">{name}</h3>
+      <p className="text-md text-base">{position}</p>
     </div>
   );
 };

@@ -17,10 +17,10 @@ const TicketCard = ({ title, description, link }) => {
               <p className="text-5xl font-bold mb-2 text-center relative py-4 leading-none -left-18 z-10 bg-accent w-60 text-base">
                 {group.price}
               </p>
-              <p className="text-lg text-primary mb-2 mt-6">
+              <p className="text-xl font-medium text-primary mb-2 mt-6">
                 Benefit yang didapat:
               </p>
-              <ul className="list-disc list-inside space-y-1 text-sm">
+              <ul className="list-disc list-inside space-y-1 text-lg font-medium">
                 {group.benefits.map((benefit, bIdx) => (
                   <li key={bIdx}>{benefit}</li>
                 ))}

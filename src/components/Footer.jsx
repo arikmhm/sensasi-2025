@@ -35,8 +35,11 @@ const Footer = () => {
                 sensasiudinus2025@gmail.com
               </a>
             </p>
-            <p>Telepon: 0812-3456-7890</p>
-            <p>Alamat: Jl. Sistem Informasi No. 1, Semarang</p>
+            <p>Telepon: +62 812-2807-4509 (Rizza)</p>
+            <p>
+              Alamat: Jl. Sadewa 2 No.8, Pendrikan Kidul, Kec. Semarang Tengah
+              Kota Semarang, Jawa Tengah 50131
+            </p>
           </div>
         </div>
 
