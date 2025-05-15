@@ -2,10 +2,21 @@
 deployment:
   branch: deploy
   tasks:
+    - export REPOPATH=~/repositories/sensasi-2025
     - export DEPLOYPATH=~/public_html/sensasi2025.hmsisfoudinus.org
+
     - echo "🚀 Deploying from deploy branch..."
+
+    # Reset repo lokal agar sinkron dengan remote (menghindari diverged error)
+    - cd $REPOPATH && git fetch origin && git reset --hard origin/deploy
+
     - echo "🧹 Membersihkan direktori tujuan..."
     - /bin/rm -rf $DEPLOYPATH/*
+
     - echo "📁 Menyalin file dari repository ke public_html..."
-    - /bin/cp -R * $DEPLOYPATH/
+    - /bin/cp -R $REPOPATH/* $DEPLOYPATH/
+
+    # Optional: hapus direktori .git agar tidak ikut tersalin (jika perlu)
+    - /bin/rm -rf $DEPLOYPATH/.git
+
     - echo "✅ Deploy berhasil ke sensasi2025.hmsisfoudinus.org"
