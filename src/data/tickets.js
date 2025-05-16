@@ -15,7 +15,7 @@ const tickets = [
         ],
       },
     ],
-    link: "https://bit.ly/PendaftaranSENSASI2025",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeDuoX0tgPkKgQMm6Hig0X4Yox2_uDoasR0hrM_kgw5CFlI5Q/viewform?pli=1",
   },
   {
     title: "SEMINAR",
@@ -33,7 +33,7 @@ const tickets = [
         ],
       },
     ],
-    link: "https://bit.ly/PendaftaranSENSASI2025",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeDuoX0tgPkKgQMm6Hig0X4Yox2_uDoasR0hrM_kgw5CFlI5Q/viewform?pli=1",
   },
   {
     title: "SEMINAR & PAPER",
@@ -51,7 +51,7 @@ const tickets = [
         ],
       },
     ],
-    link: "/form-seminar",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSffSmwT4zx7ier3oXUEXeC_Rs0-SUd-dVhJ0DKHjYMDMHbtKw/viewform",
   },
 ];
 
