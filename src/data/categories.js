@@ -47,10 +47,6 @@ const categories = [
       "E-Commerce",
     ],
   },
-  {
-    title: "Hukum",
-    items: [],
-  },
 ];
 
 export default categories;
