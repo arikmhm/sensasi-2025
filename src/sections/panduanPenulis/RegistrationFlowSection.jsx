@@ -1,8 +1,15 @@
 import registrationFlow from "../../data/registrationFlow";
+import patternRight from "../../assets/images/pattern/pattern-about-about-right.svg";
 
 const RegistrationFlowSection = () => {
   return (
     <section className="relative bg-base py-20 px-6">
+      {/* Pattern pojok kanan bawah */}
+      <img
+        src={patternRight}
+        alt=""
+        className="absolute top-16 right-0  w-24 md:w-80 "
+      />
       {/* Judul */}
       <div className="max-w-6xl mx-auto mb-12 mt-24 md:mt-40">
         <h2 className="text-accent text-3xl md:text-5xl font-medium mb-4 md:text-center text-left">

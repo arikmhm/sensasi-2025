@@ -18,7 +18,7 @@ const SubmitPaper = () => {
 
         {/* Deskripsi */}
         <p className=" text-justify leading-relaxed text-black/80 md:text-lg">
-          Peserta dapat mengirimkan naskah dalam bentuk pdf. Naskah yang lolos
+          Peserta dapat mengirimkan naskah dalam bentuk DOCX. Naskah yang lolos
           akan diterbitkan dalam prosiding SENSASI 2025 dengan ketentuan sudah
           melakukan pembayaran sebesar{" "}
           <i className="font-semibold">Rp. 100.000</i>. Jika ingin melakukan
