@@ -7,8 +7,8 @@ const AuthorGuide = () => {
   return (
     <main className="min-h-screen">
       <RegistrationFlowSection />
-      <JournalTemplateSection />
       <SubmitPaper />
+      <JournalTemplateSection />
     </main>
   );
 };

@@ -1,7 +1,6 @@
 const AboutSection = () => {
   return (
     <section className="relative bg-base py-20 px-6 overflow-hidden ">
-
       {/* Konten utama */}
       <div className="max-w-6xl mx-auto text-center mt-16 md:mt-48">
         <h2 className="text-2xl md:text-5xl font-heading font-semibold text-accent leading-tight">

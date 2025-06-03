@@ -18,11 +18,12 @@ const SubmitPaper = () => {
 
         {/* Deskripsi */}
         <p className=" text-justify leading-relaxed text-black/80 md:text-lg">
-          Naskah akan dilakukan peninjauan jika seluruh nama yang terlibat dalam
-          penulisan naskah telah terdaftar sebagai peserta SENSASI 2025. Naskah
-          yang lolos akan diterbitkan dalam prosiding SENSASI 2025 dengan
-          ketentuan sudah melakukan pembayaran sebesar{" "}
-          <i className="font-semibold">Rp. 100.000</i>.
+          Peserta dapat mengirimkan naskah dalam bentuk pdf. Naskah yang lolos
+          akan diterbitkan dalam prosiding SENSASI 2025 dengan ketentuan sudah
+          melakukan pembayaran sebesar{" "}
+          <i className="font-semibold">Rp. 100.000</i>. Jika ingin melakukan
+          cetak dalam bentuk fisik, peserta dapat melakukan pembayaran tambahan
+          sebesar <i className="font-semibold">Rp. 150.000</i>.
         </p>
       </div>
     </section>

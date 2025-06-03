@@ -4,16 +4,18 @@ import Doscom from "../assets/images/partners/medpart/doscom.png";
 import BiroAnimasi from "../assets/images/partners/medpart/biro-animasi.png";
 import Kembar from "../assets/images/partners/sponsor/kembar.PNG";
 import HMPSSI from "../assets/images/partners/medpart/hmpssi.png";
+import HMTI from "../assets/images/partners/medpart/hmti.png";
+import Loji from "../assets/images/partners/sponsor/loji.png";
 export const sponsors = [
   { name: "Kembar", logo: Kembar },
-  { name: "Sponsor B", logo: sponsor },
-  { name: "Sponsor C", logo: sponsor },
-  { name: "Sponsor D", logo: sponsor },
+  { name: "Loji", logo: Loji },
+  // { name: "Sponsor C", logo: sponsor },
+  // { name: "Sponsor D", logo: sponsor },
 ];
 
 export const mediaPartners = [
   { name: "Doscom", logo: Doscom },
   { name: "Biro Animasi", logo: BiroAnimasi },
   { name: "HMPSSI", logo: HMPSSI },
-  { name: "Medpart", logo: medpart },
+  { name: "HMTI", logo: HMTI },
 ];

@@ -257,7 +257,10 @@ const Navbar = () => {
                     <Link
                       to="/acara/tempat"
                       className="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700"
-                      onClick={() => setIsDropdownOpen(false)}
+                      onClick={() => {
+                        setIsDropdownOpen(false);
+                        toggleMenu();
+                      }}
                     >
                       Tempat
                     </Link>
@@ -266,7 +269,10 @@ const Navbar = () => {
                     <Link
                       to="/acara/speaker"
                       className="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700"
-                      onClick={() => setIsDropdownOpen(false)}
+                      onClick={() => {
+                        setIsDropdownOpen(false);
+                        toggleMenu();
+                      }}
                     >
                       Speaker
                     </Link>
@@ -275,7 +281,10 @@ const Navbar = () => {
                     <Link
                       to="/acara/rundown"
                       className="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700"
-                      onClick={() => setIsDropdownOpen(false)}
+                      onClick={() => {
+                        setIsDropdownOpen(false);
+                        toggleMenu();
+                      }}
                     >
                       Rundown
                     </Link>
