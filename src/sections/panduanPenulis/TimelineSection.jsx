@@ -1,6 +1,6 @@
 import timeline from "../../data/timeline";
-import patternLeft from "../../assets/images/pattern/pattern-about-about-left.svg";
-import patternRight from "../../assets/images/pattern/pattern-about-about-right.svg";
+// import patternLeft from "../../assets/images/pattern/pattern-about-about-left.svg";
+// import patternRight from "../../assets/images/pattern/pattern-about-about-right.svg";
 
 const TimelineSection = () => {
   return (
