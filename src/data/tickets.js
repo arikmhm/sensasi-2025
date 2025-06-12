@@ -4,7 +4,7 @@ const tickets = [
     description: [
       {
         label: "MAHASISWA UDINUS",
-        price: "40K",
+        price: "35K",
         benefits: [
           "Seminar Kit",
           "Materi Seminar",
