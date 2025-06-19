@@ -11,7 +11,6 @@ const tickets = [
           "Snack",
           "E-Sertifikat",
           "Makan Siang",
-          "Snack",
         ],
       },
     ],
@@ -29,11 +28,21 @@ const tickets = [
           "Snack",
           "E-Sertifikat",
           "Makan Siang",
-          "Snack",
         ],
       },
     ],
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeDuoX0tgPkKgQMm6Hig0X4Yox2_uDoasR0hrM_kgw5CFlI5Q/viewform?pli=1",
+  },
+  {
+    title: "SEMINAR (ONLINE)",
+    description: [
+      {
+        label: "MAHASISWA / UMUM",
+        price: "20K",
+        benefits: ["Materi Seminar", "E-Sertifikat"],
+      },
+    ],
+    link: "https://forms.gle/pVcqAGMup3HjFp4XA",
   },
 ];
 
